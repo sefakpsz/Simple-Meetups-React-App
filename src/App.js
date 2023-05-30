@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import Todo from "./components/Todo";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <h1>My Lovers</h1>
+      <Todo text="Ayşo" />
+      <Todo text="More Ayşo" />
+      <Todo text="More and more Ayşo" />
     </div>
-  );
+  )
 }
 
 export default App;
