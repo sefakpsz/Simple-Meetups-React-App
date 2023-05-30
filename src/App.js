@@ -1,12 +1,17 @@
-import Todo from "./components/Todo";
+import { Route, Routes } from 'react-router-dom'
+
+import AllMeetupsPage from './pages/AllMeetups'
+import FavoritesPage from './pages/Favorites'
+import NewMeetupPage from './pages/NewMeetup'
 
 const App = () => {
   return (
     <div >
-      <h1>My Lovers</h1>
-      <Todo text="Ayşo" />
-      <Todo text="More Ayşo" />
-      <Todo text="More and more Ayşo" />
+      <Routes>
+        <Route path='/' element={<AllMeetupsPage />} />
+        <Route path='/new-meetup' element={<NewMeetupPage />} />
+        <Route path='/favorites' element={<FavoritesPage />} />
+      </Routes>
     </div>
   )
 }
