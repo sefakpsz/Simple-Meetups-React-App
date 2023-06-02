@@ -5,7 +5,6 @@ const AllMeetups = () => {
     const [isLoading, setIsLoading] = useState(true)
     const [loadedMeetups, setLoadedMeetups] = useState([])
 
-    console.log(isLoading);
     useEffect(() => {
         fetch(
             'https://react-getting-started-6fd29-default-rtdb.firebaseio.com/meetups.json'
