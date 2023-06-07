@@ -15,6 +15,9 @@ const MainNavigation = () => {
                         <Link to='/'>All Meetups</Link>
                     </li>
                     <li>
+                        <Link to='/'>All Ayşos</Link>
+                    </li>
+                    <li>
                         <Link to='/new-meetup'>Add New Meetup</Link>
                     </li>
                     <li>
